@@ -44,3 +44,4 @@ def formatted_data(data):
         {sender_info} -> {recipent}
         {operations_amount}""")
     return format_data
+

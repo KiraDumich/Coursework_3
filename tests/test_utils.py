@@ -1,4 +1,3 @@
-import pytest
 from utils import get_data, formatted_data, filter_data, get_last_data
 
 
@@ -32,5 +31,7 @@ def test_get_last_data(test_data):
 
 
 def test_formatted_data(test_data):
-    data = formatted_data(test_data[0])
-    assert data == ['23.03.2018 Открытие вклада\n -> Счет**4215\n48223.05 руб.']
+    data = formatted_data([test_data[0]])
+    assert data == ['        23.03.2018 Открытие вклада\n'
+                    '         -> Счет**2431\n'
+                    '        48223.05 руб.']
